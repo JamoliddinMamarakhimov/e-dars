@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-var dbSession *gorm.DB
+var dbConn *gorm.DB
 
 func ConnectToDb() error {
 	connectionString := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s",
@@ -23,10 +23,10 @@ func ConnectToDb() error {
 	if err != nil {
 		return err
 	}
-	dbSession = db
+	dbConn = db
 	return nil
 }
 
 func GetDBConnection() *gorm.DB {
-	return dbSession
+	return dbConn
 }

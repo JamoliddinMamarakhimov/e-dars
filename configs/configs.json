@@ -16,15 +16,15 @@
     "local_time": true
   },
   "app_params": {
-    "gin_mode": "release",
+    "gin_mode": "debug",
     "port_run": "8080",
     "server_url": "localhost",
-    "server_name": "e-dars_service"
+    "server_name": "edars_service"
   },
   "postgres_params": {
     "host": "localhost",
     "port": "5432",
-    "user": "kurbon",
-    "database": "e-dars_db"
+    "user": "postgres",
+    "database": "edars_db"
   }
 }
